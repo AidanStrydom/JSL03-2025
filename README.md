@@ -1,38 +1,43 @@
-# JSL03 Project Brief: Console-Based Task Manager
-
-## Important Prerequisite
-
-1. Before starting this challenge, make sure you have reviewed and corrected your JSL02 project using the provided solution. Your prompts for entering task details should be fully functional and include proper validation checks to ensure accurate user input.
-2. **Check the project user stories in your student dashboard**, make sure you understand what is required for each feature.
+# JSL02 Challenge – Solution Code
 
 ## Overview
 
-This project involves creating a **simple task management system** where users can add **up to three new tasks** to an existing task array. Tasks are **stored as objects in an array**, each with a **unique incremental ID**. Users will enter task details via prompts, and the system will allow filtering to view only completed tasks. The project focuses on **array manipulation, user interaction via prompts and alerts, and console logging for task management**.
+This repository provides the **official solution code for the JSL02 challenge**. It is meant to help students verify their understanding of JavaScript fundamentals, particularly **user input validation**, **conditional logic**, and **basic output to the console**.
 
-## Key Objectives
+Students should use this solution to:
 
-### Logic & User Interaction
+- Review their approach to handling user input via `prompt()`
+- Compare logic used for validating task statuses (`todo`, `doing`, `done`)
+- Understand how to handle multiple conditional outputs
+- Improve their code readability and structure before continuing to **JSL03**
 
-- Store tasks as **objects inside an array** for structured data management.
-- Allow users to **add up to three new tasks** to the existing task list.
-- Ensure each new task has a **unique incremental ID** based on the last task in the array.
-- Prompt users to enter **task details (title, description, status)** and store them in an object.
-- Alert users when they reach the task limit with the message:
-  _"There are enough tasks on your board, please check them in the console."_
-  Implement a **filter function** to display only tasks with the status `"done"`.
-- Log **all tasks** in the console with a clear label for easy review.
-- Log **only completed tasks** (status: `"done"`) in the console under a "Completed Tasks" label for quick reference.
+## Features Covered
 
-## Code Quality & Maintainability
+The solution demonstrates how to:
 
-- Use meaningful variable and function names to ensure readability and maintainability.
-- Follow consistent indentation and formatting to enhance code clarity.
-- Include comments explaining key logic and functionality to support future modifications.
+- Prompt the user for **titles**, **descriptions**, and **status** of two tasks
+- Validate the entered status to ensure it's one of the allowed options
+- Display a **summary in the console** if a task is marked `"done"`
+- Log a motivational message if **neither** task is completed
 
-## Expected Outcome
+## Structure
 
-A **structured and limited task management system** that enables users to add, review, and filter tasks efficiently while ensuring **clean, well-documented, and maintainable code.**
+The project includes:
 
-**Console Log of all and completed tasks**
+- ✅ Interactive JavaScript to collect and validate user input
+- 🧠 Clear loops for input validation
+- 🔍 Simple logic that checks and logs completion status
+- 💬 Console messages to give meaningful feedback to the user
 
-![console log](./explainer-images/console%20log.png)
+## How to Use This Solution
+
+1. Open the project folder with **Live Server** in VS Code, then open your browser's **developer console** to view the outputs.
+2. Compare the input handling, validation, and logging logic to your own implementation.
+3. Reflect on any areas where your code could be **cleaner**, **more robust**, or **easier to read**.
+4. Make necessary improvements before continuing to JSL03.
+
+---
+
+## License
+
+This solution code is provided for **educational use only**.
